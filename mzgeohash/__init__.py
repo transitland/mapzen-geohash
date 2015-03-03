@@ -1,1 +1,1 @@
-from geohash import encode, decode, neighbors, neighborsfit
+from geohash import encode, decode, adjacent, neighbors, neighborsfit
