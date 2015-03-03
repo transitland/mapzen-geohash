@@ -1,7 +1,10 @@
 from distutils.core import setup
+
+import mzgeohash
+
 setup(
   name='mzgeohash',
-  version='1.0',
+  version=mzgeohash.__version__,
   description='Mapzen Geohash',
   author='Ian Rees',
   author_email='ian@mapzen.com',
