@@ -1,5 +1,7 @@
 # Mapzen Geohash
 
+[![Circle CI](https://circleci.com/gh/transitland/mapzen-geohash.png?style=badge)](https://circleci.com/gh/transitland/mapzen-geohash)
+
 A geohash is a convenient method for encoding geographic coordinates, where each character in the geohash adds additional precision. This makes geohashes well suited for indexing mechanisms, grouping geographically located entities, and compactly encoding coordinates based on the level of detail required.
 
 More information about Geohashes:
