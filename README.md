@@ -1,5 +1,17 @@
 # Mapzen Geohash
 
+A geohash is a convenient method for encoding geographic coordinates, where each character in the geohash adds additional precision. This makes geohashes well suited for indexing mechanisms, grouping geographically located entities, and compactly encoding coordinates based on the level of detail required.
+
+More information about Geohashes:
+
+ * http://www.movable-type.co.uk/scripts/geohash.html
+ * http://en.wikipedia.org/wiki/Geohash
+ * http://geohash.org/
+
+This Python package contains simple tools for encoding and decoding geohashes.
+
+## Example usage
+
 ```
 >>> import mzgeohash
 >>> mzgeohash.decode('xn76urwe1g9y')
@@ -17,3 +29,15 @@
  'sw': 'xn76urwe1g9t',
  'w': 'xn76urwe1g9w'}
 ```
+
+## Contributing
+
+Please [open a Github issue](https://github.com/transitland/mapzen-geohash/issues/new) with as much of the following information as you're able to specify, or [contact us](#contact) for assistance.
+
+## License
+
+Unless otherwise indicated, the code used to build and maintain this registry is Copyright (C) 2014-2015 Mapzen and released under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Contact
+
+Transitland is sponsored by [Mapzen](http://mapzen.com). Contact us with your questions, comments, or suggests: [hello@mapzen.com](mailto:hello@mapzen.com).
