@@ -8,13 +8,13 @@ import json
 
 import geohash
 
-class TestGeoHash(unittest.TestCase):
+class Test_encode_decode(unittest.TestCase):
   test_geohashes = [
     ['xn76urwe1g9y', (139.76608408614993, 35.681382017210126)],
     ['9q8yykv7bpr4', (-122.41343496367335, 37.775799008086324)],
     ['qgmpv9mkv4x0', (131.03038312867284, -25.34874997101724)]
   ]
-
+  
   def test_decode(self):
     for test, expect in self.test_geohashes:
       value = geohash.decode(test)
@@ -32,7 +32,8 @@ class TestGeoHash(unittest.TestCase):
       encoded = geohash.decode(test)
       decoded = geohash.encode(encoded)
       assert test == decoded
-  
+
+class Test_neighbors(unittest.TestCase):
   def test_neighbors(self):
     test = '9p'
     expect = {'s': '9n', 'e': '9r', 'w': '8z', 'nw': 'bb', 'sw': '8y', 'ne': 'c2', 'se': '9q', 'n': 'c0', 'c':'9p'}
@@ -40,6 +41,7 @@ class TestGeoHash(unittest.TestCase):
     for k in expect:
       assert expect[k] == result[k]
 
+class Test_adjacent(unittest.TestCase):
   def test_adjacent(self):
     assert geohash.adjacent('9p', 'e') == '9r'
     assert geohash.adjacent('9p', 's') == '9n'
@@ -97,6 +99,8 @@ class Test_neighborsfit(unittest.TestCase):
     (-122.317269, 37.925655),
     (-122.434092, 37.732921)
     ]
+    
   def test_neighborsfit(self):
-    assert geohash.neighborsfit(self.test_centroid, self.test_points) == '9q9'
+    expect = '9q9'
+    assert geohash.neighborsfit(self.test_centroid, self.test_points) == expect
       
