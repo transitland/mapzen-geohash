@@ -83,7 +83,7 @@ def encode(lonlat, length=12):
 
 def adjacent(geohash, direction):
   """Return the adjacent geohash for a given direction."""
-  # Based on an implementation from:
+  # Based on an MIT licensed implementation by Chris Veness from:
   #   http://www.movable-type.co.uk/scripts/geohash.html
   assert direction in 'nsew', "Invalid direction: %s"%direction
   assert geohash, "Invalid geohash: %s"%geohash
