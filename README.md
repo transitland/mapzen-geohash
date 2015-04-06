@@ -12,6 +12,20 @@ More information about Geohashes:
 
 This Python package contains simple tools for encoding and decoding geohashes.
 
+## Installation
+
+Installation using pip:
+
+```
+pip install mzgeohash
+```
+
+Alternatively, [download from PyPi](https://pypi.python.org/pypi/mzgeohash) or clone this repository, and install using setup.py:
+
+```
+python ./setup.py install
+```
+
 ## Example usage
 
 ```
