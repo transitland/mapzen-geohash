@@ -50,10 +50,6 @@ python ./setup.py install
 
 Please [open a Github issue](https://github.com/transitland/mapzen-geohash/issues/new) with as much of the following information as you're able to specify, or [contact us](#contact) for assistance.
 
-## License
-
-Unless otherwise indicated, the code used to build and maintain this registry is Copyright (C) 2014-2015 Mapzen and released under the [MIT license](http://opensource.org/licenses/MIT).
-
 ## Contact
 
 Transitland is sponsored by [Mapzen](http://mapzen.com). Contact us with your questions, comments, or suggests: [hello@mapzen.com](mailto:hello@mapzen.com).
