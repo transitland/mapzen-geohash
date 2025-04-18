@@ -17,13 +17,13 @@ This Python package contains simple tools for encoding and decoding geohashes.
 Installation using pip:
 
 ```
-pip install mzgeohash
+python3 -m pip install mzgeohash
 ```
 
 Alternatively, [download from PyPi](https://pypi.python.org/pypi/mzgeohash) or clone this repository, and install using setup.py:
 
 ```
-python ./setup.py install
+python3 ./setup.py install
 ```
 
 ## Example usage
@@ -52,4 +52,4 @@ Please [open a Github issue](https://github.com/transitland/mapzen-geohash/issue
 
 ## Contact
 
-Transitland is sponsored by [Mapzen](http://mapzen.com). Contact us with your questions, comments, or suggests: [hello@mapzen.com](mailto:hello@mapzen.com).
+Transitland is sponsored by [Interline](http://interline.io)

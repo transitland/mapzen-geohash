@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mzgeohash"
+version = "1.1.0"
+dependencies = []
+requires-python = ">=3.8"
+authors = [
+  {name = "Ian Rees", email = "ian@ianrees.net"},
+]
+maintainers = []
+description = "Mapzen Geohash"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+keywords = []
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+
+[project.urls]
+Homepage = "https://github.com/transitland/mapzen-geohash"
+
