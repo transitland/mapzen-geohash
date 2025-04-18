@@ -18,7 +18,7 @@ def _bits_to_float(bits, lower=-90.0, middle=0.0, upper=90.0):
 def _float_to_bits(value, lower=-90.0, middle=0.0, upper=90.0, length=15):
   """Convert a float to a list of GeoHash bits."""
   ret = []
-  for i in range(length):
+  for i in range(int(length)):
     if value >= middle:
       lower = middle
       ret.append(1)
@@ -44,7 +44,7 @@ def _bits_to_geohash(value):
   """Convert a list of GeoHash bits to a GeoHash."""
   ret = []
   # Get 5 bits at a time
-  for i in (value[i:i+5] for i in xrange(0, len(value), 5)):
+  for i in (value[i:i+5] for i in range(0, len(value), 5)):
     # Convert binary to integer
     # Note: reverse here, the slice above doesn't work quite right in reverse.
     total = sum([(bit*2**count) for count,bit in enumerate(i[::-1])])
